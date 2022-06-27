@@ -407,9 +407,17 @@
 
 .resume {
     background-color: #191e26;
-    color: white;
     border: none;
-    font-size: 20px;
+}
+
+.resume a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+.resume a:hover {
+    color: rgb(140, 135, 135);
 }
 
 @media screen and (max-width:980px) {
