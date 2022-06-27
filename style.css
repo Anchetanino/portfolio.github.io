@@ -10,19 +10,20 @@
     src: url(/Fonts/Kollektif/Kollektif.ttf);
 }
 
+
+/* Homepage */
+
 .Homepage {
-    height: 90vh;
+    height: 85vh;
+    width: 100%;
     display: block;
-    background-image: url('/Images/B1.svg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: fixed;
+    background: linear-gradient(to bottom left, #0a65b0 0%, #264056 50%, #12212b 100%);
 }
 
 .myname {
     font-family: Agrandir-Regular;
     color: white;
-    font-size: 125px;
+    font-size: 80px;
     padding-left: 30px;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -59,17 +60,18 @@
 }
 
 .frames {
-    width: 300px;
-    height: 250px;
-    width: 300px;
-    height: 250px;
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 150px;
+}
+
+.frames svg {
+    width: 15px;
+    height: 15px;
 }
 
 .frameheader,
 .framefooter {
-    height: 40px;
+    height: 30px;
     background-color: #0F1819;
     border: 3px solid #FF5C00;
 }
@@ -86,7 +88,7 @@
 
 .framemain img {
     height: 170px;
-    width: 293px;
+    width: 243px;
 }
 
 .frames p {
@@ -96,7 +98,7 @@
 }
 
 .framefootermain {
-    height: 40px;
+    height: 30px;
     width: 80%;
     margin-left: 10px;
     margin-right: 10px;
@@ -121,6 +123,9 @@
     width: 50px;
 }
 
+
+/* Navigator */
+
 .navigator {
     background-color: #100F0D;
     height: 75px;
@@ -135,173 +140,6 @@
 
 .navigator a {
     text-decoration: none;
-}
-
-#aboutme {
-    height: 100vh;
-    background: linear-gradient(to bottom, #071928 0%, #09141d 10%, #051f31 20%, #0a2f46 30%, #173b55 40%, #0a2f46 50%, #051f31 60%, #09141d 70%, #071928 80%, #737373 100%);
-}
-
-.aboutmediv {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-}
-
-.aboutmepic {
-    height: 400px;
-    width: 400px;
-    background-color: #B8B9BB;
-    align-self: center;
-    border: 10px solid #100F0D;
-    margin-top: 10%;
-    animation: picanimate 6s;
-}
-
-.aboutmepic img {
-    height: 400px;
-    width: 400px;
-}
-
-.aboutmediv2 {
-    color: white;
-    width: 70%;
-    margin-top: 10%;
-}
-
-.aboutmename {
-    font-size: 60px;
-    animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-    border-right: solid 3px rgba(0, 255, 0, .75);
-    white-space: nowrap;
-    overflow: hidden;
-    color: rgba(255, 255, 255, .70);
-    animation-delay: 6s;
-}
-
-.aboutmediv2 p {
-    font-size: 30px;
-    animation: fadeIn 6s;
-}
-
-#project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    background: linear-gradient(to bottom, #737373 0%, #696969 10%, #7d7d7d 20%, #bdbdbd 30%, #d3d3d3 40%, #7d7d7d 50%, #696969 60%, #737373 70%, #dbdbdb 80%, #d3d3d3 90%, #737373 100%);
-}
-
-.projectheader {
-    text-align: center;
-    margin-top: 10%;
-}
-
-.projectheader b {
-    color: black;
-    font-size: 100px;
-    margin-bottom: 0%;
-    text-shadow: 2px 2px white;
-}
-
-.projectheader p {
-    color: black;
-    font-size: 50px;
-    margin-bottom: 0%;
-    margin-top: 0%
-}
-
-.myprojects {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    align-items: center;
-    margin-top: 100px
-}
-
-.myprojectimage {
-    height: 400px;
-    width: 400px;
-    background-color: #B8B9BB;
-    align-self: center;
-    border: 10px solid #100F0D
-}
-
-.myprojectimage img {
-    height: 400px;
-    width: 400px;
-}
-
-.myprojectdescription {
-    color: black;
-    width: 700px
-}
-
-.myprojectdescription h1 {
-    font-size: 50px;
-}
-
-.myprojectdescription p {
-    font-size: 25px;
-}
-
-#facebook:hover {
-    fill: rgb(66, 103, 178);
-}
-
-#instagram:hover {
-    fill: rgb(231, 94, 231);
-}
-
-#twitter:hover {
-    fill: rgb(29, 161, 242);
-}
-
-#github:hover {
-    fill: rgb(10, 10, 10);
-}
-
-#email:hover {
-    fill: rgb(7, 7, 7);
-}
-
-#linkedin:hover {
-    fill: rgb(37, 51, 254);
-}
-
-ul {
-    overflow: hidden;
-}
-
-li a,
-.dpd_btn_tech {
-    display: inline-block;
-}
-
-li.dpd_tech {
-    display: inline-block;
-}
-
-.dpd_content_tech {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dpd_content_tech p {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dpd_tech:hover .dpd_content_tech {
-    display: block;
 }
 
 .aboutmenav,
@@ -349,12 +187,63 @@ li.dpd_tech {
     color: black;
 }
 
+
+/* About me */
+
+#aboutme {
+    height: 100vh;
+    background: linear-gradient(to bottom, #071928 0%, #09141d 10%, #051f31 20%, #0a2f46 30%, #173b55 40%, #0a2f46 50%, #051f31 60%, #09141d 70%, #071928 80%, #737373 100%);
+}
+
+.aboutmediv {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.aboutmepic {
+    height: 350px;
+    width: 350px;
+    background-color: #B8B9BB;
+    align-self: center;
+    border: 10px solid #100F0D;
+    margin-top: 10%;
+    animation: picanimate 6s;
+}
+
+.aboutmepic img {
+    height: 350px;
+    width: 350px;
+}
+
+.aboutmediv2 {
+    color: white;
+    width: 60%;
+    margin-top: 10%;
+}
+
+.aboutmename {
+    font-size: 50px;
+    animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255, 255, 255, .70);
+    animation-delay: 6s;
+}
+
+.aboutmediv2 p {
+    font-size: 20px;
+    animation: fadeIn 6s;
+}
+
 @keyframes animated-text {
     from {
         width: 0;
     }
     to {
-        width: 340px;
+        width: 300px;
     }
 }
 
@@ -363,7 +252,7 @@ li.dpd_tech {
         width: 0;
     }
     to {
-        width: 400px;
+        width: 350px;
     }
 }
 
@@ -394,6 +283,70 @@ li.dpd_tech {
     }
 }
 
+
+/* My Projects */
+
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background: linear-gradient(to bottom, #737373 0%, #696969 10%, #7d7d7d 20%, #bdbdbd 30%, #d3d3d3 40%, #7d7d7d 50%, #696969 60%, #737373 70%, #dbdbdb 80%, #d3d3d3 90%, #737373 100%);
+}
+
+.projectheader {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.projectheader b {
+    color: black;
+    font-size: 100px;
+    margin-bottom: 0%;
+    text-shadow: 2px 2px white;
+}
+
+.projectheader p {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 0%;
+    margin-top: 0%
+}
+
+.myprojects {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-top: 100px
+}
+
+.myprojectimage {
+    height: 350px;
+    width: 350px;
+    background-color: #B8B9BB;
+    align-self: center;
+    border: 10px solid #100F0D
+}
+
+.myprojectimage img {
+    height: 350px;
+    width: 350px;
+}
+
+.myprojectdescription {
+    color: black;
+    width: 700px
+}
+
+.myprojectdescription h1 {
+    font-size: 40px;
+}
+
+.myprojectdescription p {
+    font-size: 20px;
+}
+
 .code,
 .website {
     -webkit-transition: -webkit-transform 0.5s;
@@ -407,6 +360,33 @@ li.dpd_tech {
 .website:hover {
     -webkit-transform: scale(1.8) rotate(0.01deg);
     transform: scale(1.8) rotate(0.01deg);
+}
+
+
+/* Contact Me */
+
+#facebook:hover {
+    fill: rgb(66, 103, 178);
+}
+
+#instagram:hover {
+    fill: rgb(231, 94, 231);
+}
+
+#twitter:hover {
+    fill: rgb(29, 161, 242);
+}
+
+#github:hover {
+    fill: rgb(10, 10, 10);
+}
+
+#email:hover {
+    fill: rgb(7, 7, 7);
+}
+
+#linkedin:hover {
+    fill: rgb(37, 51, 254);
 }
 
 #contact {
@@ -430,4 +410,163 @@ li.dpd_tech {
     color: white;
     border: none;
     font-size: 20px;
+}
+
+@media screen and (max-width:980px) {
+    .myname {
+        font-size: 60px;
+    }
+    .webdev {
+        font-size: 20px;
+    }
+    .frames {
+        width: 175px;
+    }
+    .frames svg {
+        width: 10px;
+        height: 10px;
+    }
+    .frameheader,
+    .framefooter {
+        height: 20px;
+        background-color: #0F1819;
+        border: 3px solid #FF5C00;
+    }
+    .framefooter {
+        display: flex
+    }
+    .framemain {
+        height: 120px;
+    }
+    .framemain img {
+        height: 120px;
+        width: 170px;
+    }
+    .frames p {
+        font-size: 20px
+    }
+    .framefootermain {
+        height: 20px;
+    }
+    .logo {
+        width: 30px;
+    }
+    /* Navigator */
+    .navigator {
+        height: 50px;
+    }
+    .aboutmenav,
+    .myprojectnav,
+    .contactnav {
+        height: 30px;
+        width: 30px;
+    }
+    /* About me */
+    .aboutmepic {
+        height: 250px;
+        width: 250px;
+    }
+    .aboutmepic img {
+        height: 250px;
+        width: 250px;
+    }
+    .aboutmediv2 {
+        width: 50%;
+    }
+    .aboutmename {
+        font-size: 35px;
+    }
+    .aboutmediv2 p {
+        font-size: 20px;
+    }
+    @keyframes animated-text {
+        from {
+            width: 0;
+        }
+        to {
+            width: 200px;
+        }
+    }
+    @keyframes picanimate {
+        from {
+            width: 0;
+        }
+        to {
+            width: 250px;
+        }
+    }
+    /* My Projects */
+    .projectheader b {
+        font-size: 75px;
+    }
+    .projectheader p {
+        font-size: 30px;
+    }
+    .myprojectimage {
+        height: 250px;
+        width: 250px;
+    }
+    .myprojectimage img {
+        height: 250px;
+        width: 250px;
+    }
+    .myprojectdescription {
+        width: 500px
+    }
+    .myprojectdescription h1 {
+        font-size: 30px;
+    }
+    .myprojectdescription p {
+        font-size: 15px;
+    }
+    .code,
+    .website {
+        height: 20px;
+    }
+    .code img,
+    .website img {
+        height: 15px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .Homepage {
+        height: 175vh;
+    }
+    .homeimage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logolist {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logolist {
+        margin-right: 0px;
+    }
+    .aboutmediv {
+        flex-direction: column;
+    }
+    #aboutme {
+        height: 175vh;
+    }
+    .aboutmediv2 {
+        width: 80%
+    }
+    .myprojects {
+        flex-direction: column;
+        margin-top: 50px
+    }
+    .myprojectdescription {
+        width: 80%
+    }
+    .projectheader b {
+        font-size: 75px;
+    }
+    .projectheader p {
+        font-size: 30px;
+    }
 }
