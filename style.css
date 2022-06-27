@@ -95,6 +95,15 @@
     font-size: 30px
 }
 
+.framefootermain {
+    height: 40px;
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-right: 3px solid #FF5C00;
+    border-left: 3px solid #FF5C00;
+}
+
 .logolist {
     float: right;
     list-style: none;
@@ -128,16 +137,137 @@
     text-decoration: none;
 }
 
+#aboutme {
+    height: 100vh;
+    background: linear-gradient(to bottom, #071928 0%, #09141d 10%, #051f31 20%, #0a2f46 30%, #173b55 40%, #0a2f46 50%, #051f31 60%, #09141d 70%, #071928 80%, #737373 100%);
+}
+
+.aboutmediv {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.aboutmepic {
+    height: 400px;
+    width: 400px;
+    background-color: #B8B9BB;
+    align-self: center;
+    border: 10px solid #100F0D;
+    margin-top: 10%;
+    animation: picanimate 6s;
+}
+
+.aboutmepic img {
+    height: 400px;
+    width: 400px;
+}
+
+.aboutmediv2 {
+    color: white;
+    width: 70%;
+    margin-top: 10%;
+}
+
+.aboutmename {
+    font-size: 60px;
+    animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255, 255, 255, .70);
+    animation-delay: 6s;
+}
+
+.aboutmediv2 p {
+    font-size: 30px;
+    animation: fadeIn 6s;
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background: linear-gradient(to bottom, #737373 0%, #696969 10%, #7d7d7d 20%, #bdbdbd 30%, #d3d3d3 40%, #7d7d7d 50%, #696969 60%, #737373 70%, #dbdbdb 80%, #d3d3d3 90%, #737373 100%);
+}
+
+.projectheader {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.projectheader b {
+    color: black;
+    font-size: 100px;
+    margin-bottom: 0%;
+    text-shadow: 2px 2px white;
+}
+
+.projectheader p {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 0%;
+    margin-top: 0%
+}
+
+.myprojects {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    margin-top: 100px
+}
+
+.myprojectimage {
+    height: 400px;
+    width: 400px;
+    background-color: #B8B9BB;
+    align-self: center;
+    border: 10px solid #100F0D
+}
+
+.myprojectimage img {
+    height: 400px;
+    width: 400px;
+}
+
+.myprojectdescription {
+    color: black;
+    width: 700px
+}
+
+.myprojectdescription h1 {
+    font-size: 50px;
+}
+
+.myprojectdescription p {
+    font-size: 25px;
+}
+
 #facebook:hover {
     fill: rgb(66, 103, 178);
 }
 
 #instagram:hover {
-    fill: rgb(88 81 216);
+    fill: rgb(231, 94, 231);
 }
 
 #twitter:hover {
     fill: rgb(29, 161, 242);
+}
+
+#github:hover {
+    fill: rgb(10, 10, 10);
+}
+
+#email:hover {
+    fill: rgb(7, 7, 7);
+}
+
+#linkedin:hover {
+    fill: rgb(37, 51, 254);
 }
 
 ul {
@@ -268,11 +398,36 @@ li.dpd_tech {
 .website {
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
-    height: 40px
+    height: 40px;
+    box-shadow: 2px 2px;
+    background-color: #737373;
 }
 
 .code:hover,
 .website:hover {
     -webkit-transform: scale(1.8) rotate(0.01deg);
     transform: scale(1.8) rotate(0.01deg);
+}
+
+#contact {
+    height: 200px;
+    background-color: #191e26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.log {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.resume {
+    background-color: #191e26;
+    color: white;
+    border: none;
+    font-size: 20px;
 }
