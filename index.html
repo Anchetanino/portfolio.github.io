@@ -6,119 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niño Ancheta</title>
-    <style>
-        @font-face {
-            font-family: Aggradir;
-            src: url(/Fonts/Agrandir/Agrandir-Regular.otf);
-        }
-        
-        @font-face {
-            font-family: Kollektif;
-            src: url(/Fonts/Kollektif/Kollektif.ttf);
-        }
-        
-        .logolist {
-            float: right;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-right: 100px;
-        }
-        
-        .logolist>li {
-            padding: 5px 15px;
-        }
-        
-        .logo {
-            fill: white;
-            width: 30px;
-        }
-        
-        #facebook:hover {
-            fill: rgb(66, 103, 178);
-        }
-        
-        #instagram:hover {
-            fill: rgb(88 81 216);
-        }
-        
-        #twitter:hover {
-            fill: rgb(29, 161, 242);
-        }
-        
-        ul {
-            overflow: hidden;
-        }
-        
-        li a,
-        .dpd_btn_tech {
-            display: inline-block;
-        }
-        
-        li.dpd_tech {
-            display: inline-block;
-        }
-        
-        .dpd_content_tech {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-        
-        .dpd_content_tech p {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        
-        .dpd_tech:hover .dpd_content_tech {
-            display: block;
-        }
-        
-        .aboutmenav,
-        .myprojectnav,
-        .contactnav {
-            height: 40px;
-            width: 40px;
-            align-self: center;
-            color: transparent;
-            border-radius: 50%;
-            transition: width 1s;
-        }
-        
-        .aboutmenav {
-            background-color: #B8B9BB;
-        }
-        
-        .myprojectnav {
-            background-color: #563D7C;
-        }
-        
-        .contactnav {
-            background-color: #FF5C00;
-        }
-        
-        .aboutmenav:hover,
-        .myprojectnav:hover,
-        .contactnav:hover {
-            color: black;
-            width: 100px;
-            border-radius: 10px;
-            font-size: medium;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
 <body>
     <!-- Homepage style="background-color: black;"-->
-    <div class="Homepage" style=" height:700px;display: block; background-image: url('/Images/homepage.png'); background-size: 100%; background-repeat: no-repeat; background-position: fixed; ">
+    <div class="Homepage">
 
 
         <ul class="logolist">
@@ -142,15 +36,15 @@
                     <path d="M377.6,0.2H126.4C56.8,0.2,0,57,0,126.6v251.6c0,69.2,56.8,126,126.4,126H378c69.6,0,126.4-56.8,126.4-126.4V126.6    C504,57,447.2,0.2,377.6,0.2z M377.2,189c0,2.8,0,5.6,0,8.4c0,84-64.8,180.8-183.6,180.8c-36.4,0-70.4-10.4-98.8-28.4    c5.2,0.4,10,0.8,15.2,0.8c30.4,0,58-10,80-27.2c-28.4-0.4-52-18.8-60.4-44c4,0.8,8,1.2,12,1.2c6,0,12-0.8,17.2-2.4    c-28.8-6-50.8-31.6-50.8-62.4V215c8,4.8,18.4,7.6,28.8,8c-17.2-11.2-28.8-30.8-28.8-52.8c0-11.6,3.2-22.4,8.8-32    c32,38.4,79.2,63.6,132.8,66.4c-1.2-4.8-1.6-9.6-1.6-14.4c0-35.2,28.8-63.6,64.4-63.6c18.4,0,35.2,7.6,47.2,20    c14.8-2.8,28.4-8,40.8-15.6c-4.8,14.8-15.2,27.2-28.4,35.2c13.2-1.6,25.6-4.8,37.2-10C400.4,169,389.6,180.2,377.2,189z"/>
                 </svg></li>
         </ul>
-        <p style="font-family:Agrandir-Regular ; color: white; font-size: 70px; padding-left: 30px;  margin-bottom:0%; margin-top:0%"><b>NIÑO </b> </p>
-        <p style="font-family:Agrandir-Regular ; color: white; font-size: 70px; padding-left: 30px;  margin-bottom:0%;margin-top:0%; padding-top: 0%;"><b>ANCHETA</b></p>
-        <p style="font-family: Kollektif; color: white; padding-left: 30px;font-size: 30px; margin-top:0%">WEB DEVELOPER</p>
+        <p class="myname"><b>NIÑO </b> </p>
+        <p class="myname"><b>ANCHETA</b></p>
+        <p class="webdev">WEB DEVELOPER</p>
         <br><br>
-        <div style="background-color: #FF5C00; height: 10px; width: 20%;  position: absolute; left: 40%;"></div>
-        <hr style="border:none; height: 2px; background-color: #FF5C00;">
-        <div style="display: flex; gap:100px; justify-content:center; margin-top:50px">
-            <div style="width: 300px; height: 250px;">
-                <div style="height: 40px; background-color: #0F1819; border: 3px solid #FF5C00;">
+        <div class="rectanglecenter"></div>
+        <hr class="hr">
+        <div class="homeimage">
+            <div class="frames">
+                <div class="frameheader">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 8 8 " style="fill: #FF5C00; padding-left:10px; margin-top:6px">
                             <path d="M1.41 0l-1.41 1.41.72.72 1.78 1.81-1.78 1.78-.72.69 1.41 1.44.72-.72 1.81-1.81 1.78 1.81.69.72 1.44-1.44-.72-.69-1.81-1.78 1.81-1.81.72-.72-1.44-1.41-.69.72-1.78 1.78-1.81-1.78-.72-.72z"/>
                         </svg>
@@ -158,10 +52,10 @@
                             <path d="M464 352H48c-26.5 0-48 21.5-48 48v32c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-32c0-26.5-21.5-48-48-48z"/>
                         </svg>
                 </div>
-                <div style="height:170px; border-left: 3px solid #FF5C00; border-right: 3px solid #FF5C00;">
-                    <img src=" " alt=" ">
+                <div class="framemain">
+                    <img src="./Images/aboutme.jpg" alt=" ">
                 </div>
-                <div style="height: 40px; background-color: #0F1819; border: 3px solid #FF5C00; display: flex;">
+                <div class="framefooter">
                     <svg xmlns="http://www.w3.org/2000/svg " width="24px " height="24px " viewBox="-64 0 512 512 " style="fill: #FF5C00; padding-left:10px; margin-top:6px; "><path d="M365.46 357.74L147.04 255.89l218.47-101.88c16.02-7.47 22.95-26.51
             15.48-42.53l-13.52-29C360 66.46 340.96 59.53 324.94 67L18.48 209.91a32.014 32.014 0 0 0-18.48 29v34.24c0 12.44 7.21 23.75 18.48 29l306.31 142.83c16.06 7.49 35.15.54 42.64-15.52l13.56-29.08c7.49-16.06.54-35.15-15.53-42.64z "/></svg>
                     <div style="height: 40px; width: 80%; margin-left:10px;margin-right:10px; border-right: 3px solid #FF5C00;border-left: 3px solid #FF5C00; ">
@@ -171,10 +65,10 @@
             111.61c-7.49 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z "/></svg>
 
                 </div>
-                <p style="color: white; text-align: center; font-size:30px ">About me</p>
+                <p>About me</p>
             </div>
-            <div style=" width: 300px; height: 250px; ">
-                <div style="height: 40px; background-color: #0F1819; border: 3px solid #FF5C00; ">
+            <div>
+                <div class="frameheader">
                     <svg xmlns="http://www.w3.org/2000/svg " width="24px " height="24px " viewBox="0 0 8 8 " style="fill: #FF5C00; padding-left:10px; margin-top:6px ">
                             <path d="M1.41 0l-1.41 1.41.72.72 1.78 1.81-1.78 1.78-.72.69 1.41 1.44.72-.72 1.81-1.81 1.78 1.81.69.72 1.44-1.44-.72-.69-1.81-1.78 1.81-1.81.72-.72-1.44-1.41-.69.72-1.78 1.78-1.81-1.78-.72-.72z "/>
                         </svg>
@@ -182,10 +76,10 @@
                             <path d="M464 352H48c-26.5 0-48 21.5-48 48v32c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-32c0-26.5-21.5-48-48-48z "/>
                         </svg>
                 </div>
-                <div style="height:170px; border-left: 3px solid #FF5C00; border-right: 3px solid #FF5C00;">
-                    <img src=" " alt=" ">
+                <div class="framemain">
+                    <img src="./Images/Myprojectbg.png" alt=" ">
                 </div>
-                <div style="height: 40px; background-color: #0F1819; border: 3px solid #FF5C00; display: flex ">
+                <div class="framefooter">
                     <svg xmlns="http://www.w3.org/2000/svg " width="24px " height="24px " viewBox="-64 0 512 512 " style="fill: #FF5C00; padding-left:10px; margin-top:6px; "><path d="M365.46 357.74L147.04 255.89l218.47-101.88c16.02-7.47 22.95-26.51 15.48-42.53l-13.52-29C360
                 66.46 340.96 59.53 324.94 67L18.48 209.91a32.014 32.014 0 0 0-18.48 29v34.24c0 12.44 7.21 23.75 18.48 29l306.31 142.83c16.06 7.49 35.15.54 42.64-15.52l13.56-29.08c7.49-16.06.54-35.15-15.53-42.64z "/></svg>
                     <div style="height: 40px; width: 80%; margin-left:10px;margin-right:10px; border-right: 3px solid #FF5C00;border-left: 3px solid #FF5C00; ">
@@ -195,10 +89,10 @@
                 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z "/></svg>
 
                 </div>
-                <p style="color: white; text-align: center; font-size:30px ">My Projects</p>
+                <p>My Projects</p>
             </div>
-            <div style=" width: 300px; height: 250px; ">
-                <div style="height: 40px; background-color: #0F1819; border: 3px solid #FF5C00; ">
+            <div style="  ">
+                <div class="frameheader">
                     <svg xmlns="http://www.w3.org/2000/svg " width="24px " height="24px " viewBox="0 0 8 8 " style="fill: #FF5C00; padding-left:10px; margin-top:6px ">
                             <path d="M1.41 0l-1.41 1.41.72.72 1.78 1.81-1.78 1.78-.72.69 1.41 1.44.72-.72 1.81-1.81 1.78 1.81.69.72 1.44-1.44-.72-.69-1.81-1.78 1.81-1.81.72-.72-1.44-1.41-.69.72-1.78 1.78-1.81-1.78-.72-.72z "/>
                         </svg>
@@ -206,10 +100,10 @@
                             <path d="M464 352H48c-26.5 0-48 21.5-48 48v32c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-32c0-26.5-21.5-48-48-48z "/>
                         </svg>
                 </div>
-                <div style="height:170px; border-left: 3px solid #FF5C00; border-right: 3px solid #FF5C00;">
-                    <img src=" " alt=" ">
+                <div class="framemain">
+                    <img src="./Images/Contact.jpg" alt=" ">
                 </div>
-                <div style="height: 40px; background-color: #0F1819; border: 3px solid #FF5C00; display: flex">
+                <div class="framefooter">
                     <svg xmlns="http://www.w3.org/2000/svg " width="24px " height="24px " viewBox="-64 0 512 512 " style="fill: #FF5C00; padding-left:10px; margin-top:6px; "><path d="M365.46 357.74L147.04 255.89l218.47-101.88c16.02-7.47 22.95-26.51 15.48-42.53l-13.52-29C360
                 66.46 340.96 59.53 324.94 67L18.48 209.91a32.014 32.014 0 0 0-18.48 29v34.24c0 12.44 7.21 23.75 18.48 29l306.31 142.83c16.06 7.49 35.15.54 42.64-15.52l13.56-29.08c7.49-16.06.54-35.15-15.53-42.64z "/></svg>
                     <div style="height: 40px; width: 80%; margin-left:10px;margin-right:10px; border-right: 3px solid #FF5C00;border-left: 3px solid #FF5C00; ">
@@ -219,69 +113,75 @@
                 16.06-.54 35.15 15.52 42.64L236.96 256.1 18.49 357.99C2.47 365.46-4.46 384.5 3.01 400.52l13.52 29C24 445.54 43.04 452.47 59.06 445l306.47-142.91a32.003 32.003 0 0 0 18.48-29v-34.23c-.01-12.45-7.21-23.76-18.49-29.01z "/></svg>
 
                 </div>
-                <p style="color: white; text-align: center; font-size:30px ">Contact me </p>
+                <p>Contact me </p>
             </div>
 
         </div>
 
     </div>
-    <nav style="background-color: #100F0D; height: 75px; display:flex; justify-content: flex-end ; padding-right: 20px; gap: 10px; position: sticky;
-    top: 0;
-    z-index: 1; ">
-        <!-- <p class="aboutme" style="color: white; align-self: center; font-size: x-large; visibility: hidden;">About me</p> -->
-        <button class="aboutmenav">About me</button>
-        <!-- <p class="projects" style="color: white; align-self: center; font-size: x-large; visibility: hidden;"></p> -->
-        <button class="myprojectnav">My projects</button>
-        <!-- <p class="contact" style="color: white; align-self: center; font-size: x-large; visibility: hidden;">Contact us</p> -->
-        <button class="contactnav">Contact us</button>
+    <nav class="navigator">
+        <button class="aboutmenav"><a href="index.html#aboutme">About me</a> </button>
+        <button class="myprojectnav"> <a href="index.html#project">My projects</a> </button>
+        <button class="contactnav"><a href="index.html#contact">Contact us</a> </button>
     </nav>
+
     <!-- About me -->
-    <section style="  background: linear-gradient(to bottom, #071928 0%, #09141d 10%, #051f31 20%, #0a2f46 30%, #173b55 40%, #0a2f46 50%,#051f31 60%, #09141d 70%, #071928 100%);">
+
+    <section id="aboutme" style=" height:100vh;  background: linear-gradient(to bottom, #071928 0%, #09141d 10%, #051f31 20%, #0a2f46 30%, #173b55 40%, #0a2f46 50%,#051f31 60%, #09141d 70%, #071928 80%, #737373 100%);">
         <div style=" display: flex; justify-content: center; gap:50px; align-items:center; ">
-            <div style="height: 400px; width: 400px; background-color: #B8B9BB; align-self:center; border:10px solid #100F0D; margin-top: 100px;">
-                <img src=" " alt=" ">
+            <div style="height: 400px; width: 400px; background-color: #B8B9BB; align-self:center; border:10px solid #100F0D; margin-top: 10%; animation: picanimate 6s;">
+                <img style="height: 400px; width: 400px;" src="./Images/NinoAncheta.jpg" alt=" ">
             </div>
-            <div style="color: white; width:500px ">
-                <h1>Hi, I'm Niño.</h1>
-                <p style="font-size: 16.3px; ">I am currently taking my bachelor's degree in computer engineering from University of Mindanao - Philippines. I also joined bootcamp in Kodego to enhance my skills in web developing. </p>
-                <p>Technologies learn:</p>
-                <p>C++ Java VB CSS HTML SASS Bootstrap Javascript</p>
+            <div style="color: white; width:70% ">
+                <h1 class="typing" style="font-size: 60px; animation: animated-text 4s steps(29,end) 1s 1 normal both,
+                animated-cursor 600ms steps(29,end) infinite; border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  color: rgba(255,255,255,.70); animation-delay: 6s;">Hi, I'm Niño.</h1>
+                <p style="font-size: 30px; animation: fadeIn 6s;">I am currently taking my bachelor's degree in computer engineering from University of Mindanao - Philippines. I also joined bootcamp in Kodego to enhance my skills in web developing. </p>
+                <p style="font-size: 30px; animation: fadeIn 6s; ">Technologies learn:</p>
+                <p style="font-size: 30px; padding-left: 30px; animation: fadeIn 6s;">C++ / Java / VB / CSS / HTML / SASS / Bootstrap / Javascript</p>
             </div>
         </div>
-        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="59%" y1="1%" x2="41%" y2="99%"><stop offset="5%" stop-color="#071928ff"></stop><stop offset="95%" stop-color="#737373ff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,250 0,250 C 100.41794871794875,195.06410256410257 200.8358974358975,140.12820512820514 281,166 C 361.1641025641025,191.87179487179486 421.0743589743589,298.55128205128204 487,333 C 552.9256410256411,367.44871794871796 624.8666666666667,329.66666666666663 717,299 C 809.1333333333333,268.33333333333337 921.4589743589745,244.7820512820513 995,236 C 1068.5410256410255,227.2179487179487 1103.297435897436,233.2051282051282 1171,238 C 1238.702564102564,242.7948717948718 1339.351282051282,246.3974358974359 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
 
     </section>
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="59%" y1="1%" x2="41%" y2="99%"><stop offset="5%" stop-color="#071928ff"></stop><stop offset="95%" stop-color="#737373ff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,250 0,250 C 72.53846153846158,300.3538461538461 145.07692307692315,350.7076923076923 219,327 C 292.92307692307685,303.2923076923077 368.23076923076917,205.52307692307693 461,172 C 553.7692307692308,138.47692307692307 663.9999999999999,169.20000000000002 742,196 C 820.0000000000001,222.79999999999998 865.769230769231,245.6769230769231 947,245 C 1028.230769230769,244.3230769230769 1144.9230769230767,220.09230769230768 1233,217 C 1321.0769230769233,213.90769230769232 1380.5384615384617,231.95384615384614 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
     <!-- My Projects -->
-    <section style="display: flex; flex-direction:column; justify-content: center; gap:50px; background: linear-gradient(to bottom, #737373 0%, #696969 10%, #7d7d7d 20%, #bdbdbd 30%, #d3d3d3 40%, #7d7d7d 50%, #696969 60%,#737373 70%, #dbdbdb 80%,#d3d3d3 90%, #737373 100%); ">
+    <section id="project" style="display: flex; flex-direction:column; justify-content: center; gap:50px; background: linear-gradient(to bottom, #737373 0%, #696969 10%, #7d7d7d 20%, #bdbdbd 30%, #d3d3d3 40%, #7d7d7d 50%, #696969 60%,#737373 70%, #dbdbdb 80%,#d3d3d3 90%, #737373 100%); ">
 
-        <div style="text-align: center; ">
-            <b style="color: black; font-size:50px; margin-bottom: 0%; ">My Project</b>
-            <p style="color: black; font-size:30px; margin-bottom: 0%; margin-top:0% ">Choose a project</p>
+        <div style="text-align: center; margin-top: 10%;">
+            <b style="color: black; font-size:100px; margin-bottom: 0%; text-shadow: 2px 2px white;"> My Project</b>
+            <p style="color: black; font-size:50px; margin-bottom: 0%; margin-top:0% ">Choose a project</p>
         </div>
         <div>
             <!-- Calculator -->
-            <div style="display: flex; justify-content: center; gap:50px; align-items:center; margin-top:100px ">
+            <div style="display: flex; justify-content: center; gap:50px; align-items:center; margin-top:100px;">
                 <div style="height: 400px; width: 400px; background-color: #B8B9BB; align-self:center; border:10px solid #100F0D; ">
-                    <img src=" " alt=" ">
+                    <img style="height: 400px; width: 400px;" src="./Images/Calculator.png " alt=" ">
                 </div>
                 <div style="color: blakc; width:700px ">
-                    <h1>E-CALCULATOR.</h1>
-                    <p style="font-size: 16.3px; ">I am currently taking my bachelor's degree in computer engineering from University of Mindanao - Philippines. I also joined bootcamp in Kodego to enhance my skills in web developing. </p>
-                    <p>Technologies learn:</p>
-                    <p>C++ Java VB CSS HTML SASS Bootstrap Javascript</p>
+                    <h1 style="font-size: 50px; ">E-CALCULATOR.</h1>
+                    <p style="font-size: 25px; ">This project is part of our exercise where we are ask to create a mini calculator for our user. </p>
+                    <br>
+                    <p style="font-size: 25px; ">Technologies used:</p>
+                    <p style="font-size: 25px; ">Javascript / HTML / CSS</p>
+
+                    <button class="code" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://github.com/Anchetanino/calculator.github.io.git"> <img src="./Images/Code.svg" width="30px" height="30px" alt=""></a></button>
+                    <button class="website" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://anchetanino.github.io/calculator.github.io/"> <img src="./Images/Website.svg" width="30px" height="30px" alt=""> </a></button>
                 </div>
             </div>
             <!-- Magazine -->
             <div style="display: flex; justify-content: center; gap:50px; align-items:center; margin-top:100px ">
                 <div style="color: blakc; width:700px ">
-                    <h1>E-MAGAZINE.</h1>
-                    <p style="font-size: 16.3px; ">I am currently taking my bachelor's degree in computer engineering from University of Mindanao - Philippines. I also joined bootcamp in Kodego to enhance my skills in web developing. </p>
-                    <p>Technologies learn:</p>
-                    <p>C++ Java VB CSS HTML SASS Bootstrap Javascript</p>
+                    <h1 style="font-size: 50px; ">E-MAGAZINE.</h1>
+                    <p style="font-size: 25px; ">This project is our first Mini-project. We are task to create our own electronic magazine and present it to everyone.</p>
+                    <p style="font-size: 25px; ">Technologies used:</p>
+                    <p style="font-size: 25px; ">CSS / HTML</p>
+                    <button class="code" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://github.com/Anchetanino/Anchetanino.github.io.git"> <img src="./Images/Code.svg" width="30px" height="30px" alt=""></a></button>
+                    <button class="website" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://anchetanino.github.io/"> <img src="./Images/Website.svg" width="30px" height="30px" alt=""> </a></button>
+
                 </div>
                 <div style="height: 400px; width: 400px; background-color: #B8B9BB; align-self:center; border:10px solid #100F0D; ">
-                    <img src=" " alt=" ">
+                    <img style="height: 400px; width: 400px;" src="./Images/E-magazine.png " alt=" ">
                 </div>
 
             </div>
@@ -289,32 +189,38 @@
             <!-- Patient Infromation -->
             <div style="display: flex; justify-content: center; gap:50px; align-items:center; margin-top:100px ">
                 <div style="height: 400px; width: 400px; background-color: #B8B9BB; align-self:center; border:10px solid #100F0D; ">
-                    <img src=" " alt=" ">
+                    <img style="height: 400px; width: 400px;" src="./Images/Patient_information.png " alt=" ">
                 </div>
                 <div style="color: blakc; width:700px ">
-                    <h1>E-MAGAZINE.</h1>
-                    <p style="font-size: 16.3px; ">I am currently taking my bachelor's degree in computer engineering from University of Mindanao - Philippines. I also joined bootcamp in Kodego to enhance my skills in web developing. </p>
-                    <p>Technologies learn:</p>
-                    <p>C++ Java VB CSS HTML SASS Bootstrap Javascript</p>
+                    <h1 style="font-size: 50px; ">Patient Information.</h1>
+                    <p style="font-size: 25px; ">This project is where is are task to use validation into our website. This exercise make us become more logical by validating the required and important information for patient in the hospital. </p>
+                    <p style="font-size: 25px; ">Technologies use:</p>
+                    <p style="font-size: 25px; "> CSS / HTML / Bootstrap / Javascript</p>
+                    <button class="code" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://github.com/Anchetanino/patientinformation.git"> <img src="./Images/Code.svg" width="30px" height="30px" alt=""></a></button>
+                    <button class="website" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://anchetanino.github.io/patientinformation/"> <img src="./Images/Website.svg" width="30px" height="30px" alt=""> </a></button>
+
                 </div>
             </div>
             <!-- Coding Journal -->
             <div style="display: flex; justify-content: center; gap:50px; align-items:center; margin-top:100px ">
                 <div style="color: blakc; width:700px ">
-                    <h1>E-MAGAZINE.</h1>
-                    <p style="font-size: 16.3px; ">I am currently taking my bachelor's degree in computer engineering from University of Mindanao - Philippines. I also joined bootcamp in Kodego to enhance my skills in web developing. </p>
-                    <p>Technologies learn:</p>
-                    <p>C++ Java VB CSS HTML SASS Bootstrap Javascript</p>
+                    <h1 style="font-size: 50px; ">Coding Journal.</h1>
+                    <p style="font-size: 25px; "> This is project is useful to creating your daily task and daily diary. We are task in this exercise to make a dairy and task manager with combination of different validations. </p>
+                    <p style="font-size: 25px; ">Technologies learn:</p>
+                    <p style="font-size: 25px; "> CSS / HTML / Javascript / ReactJS</p>
+                    <button class="code" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://github.com/Anchetanino/codingjournal.github.io.git"> <img src="./Images/Code.svg" width="30px" height="30px" alt=""></a></button>
+                    <button class="website" style="box-shadow: 2px 2px; background-color: #737373;"><a href="https://anchetanino.github.io/codingjournal.github.io/"> <img src="./Images/Website.svg" width="30px" height="30px" alt=""> </a></button>
+
                 </div>
                 <div style="height: 400px; width: 400px; background-color: #B8B9BB; align-self:center; border:10px solid #100F0D; ">
-                    <img src=" " alt=" ">
+                    <img style="height: 400px; width: 400px;" src="./Images/Codingjournal.png " alt=" ">
                 </div>
             </div>
         </div>
-        <!-- <svg width="100%" height="100%" id="svg2" viewBox="0 0 1440 500" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient2" x1="55%" y1="0%" x2="45%" y2="100%"><stop offset="5%" stop-color="#d3d3d3ff"></stop><stop offset="95%" stop-color="#191e26ff"></stop></linearGradient></defs><path d="M 0,500 C 0,500 0,250 0,250 C 118.99521531100476,202.23923444976077 237.9904306220095,154.47846889952152 341,156 C 444.0095693779905,157.52153110047848 531.0334928229667,208.32535885167465 611,238 C 690.9665071770333,267.67464114832535 763.8755980861242,276.2200956937799 851,293 C 938.1244019138758,309.7799043062201 1039.4641148325359,334.7942583732057 1140,329 C 1240.5358851674641,323.2057416267943 1340.267942583732,286.60287081339715 1440,250 C 1440,250 1440,500 1440,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg> -->
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="62%" y1="1%" x2="38%" y2="99%"><stop offset="5%" stop-color="#dbdbdbff"></stop><stop offset="95%" stop-color="#191e26ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,300 0,300 C 104.82142857142858,293.8928571428571 209.64285714285717,287.7857142857143 332,259 C 454.35714285714283,230.21428571428572 594.25,178.75 720,213 C 845.75,247.25 957.3571428571429,367.2142857142857 1075,396 C 1192.642857142857,424.7857142857143 1316.3214285714284,362.3928571428571 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
     </section>
     <!-- Contact Me -->
-    <section style=" height: 200px;background-color: #191e26; display: flex; flex-direction: column; justify-content: center;">
+    <section id="contact" style=" height: 200px;background-color: #191e26; display: flex; flex-direction: column; justify-content: center;">
 
         <ul class="log" style=" list-style: none; display: flex; flex-direction: row; gap: 30px; justify-content: center;">
             <li> <a href="https://www.facebook.com/anchetanino/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="logo" id="facebook" x="0px" y="0px" viewBox="0 0 29.94 29.94" style="enable-background:new 0 0 29.94 29.94; " xml:space="preserve">
@@ -352,7 +258,8 @@
     </section>
 
 
-
+    <script>
+    </script>
 </body>
 
 </html>

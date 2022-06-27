@@ -1,1 +1,278 @@
 /* My project CSS */
+
+@font-face {
+    font-family: Aggradir;
+    src: url(/Fonts/Agrandir/Agrandir-Regular.otf);
+}
+
+@font-face {
+    font-family: Kollektif;
+    src: url(/Fonts/Kollektif/Kollektif.ttf);
+}
+
+.Homepage {
+    height: 90vh;
+    display: block;
+    background-image: url('/Images/B1.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+.myname {
+    font-family: Agrandir-Regular;
+    color: white;
+    font-size: 125px;
+    padding-left: 30px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-top: 0%
+}
+
+.webdev {
+    font-family: Kollektif;
+    color: white;
+    padding-left: 30px;
+    font-size: 30px;
+    margin-top: 0%
+}
+
+.rectanglecenter {
+    background-color: #FF5C00;
+    height: 10px;
+    width: 20%;
+    position: absolute;
+    left: 40%;
+}
+
+.hr {
+    border: none;
+    height: 2px;
+    background-color: #FF5C00;
+}
+
+.homeimage {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.frames {
+    width: 300px;
+    height: 250px;
+    width: 300px;
+    height: 250px;
+    width: 300px;
+    height: 250px;
+}
+
+.frameheader,
+.framefooter {
+    height: 40px;
+    background-color: #0F1819;
+    border: 3px solid #FF5C00;
+}
+
+.framefooter {
+    display: flex
+}
+
+.framemain {
+    height: 170px;
+    border-left: 3px solid #FF5C00;
+    border-right: 3px solid #FF5C00;
+}
+
+.framemain img {
+    height: 170px;
+    width: 293px;
+}
+
+.frames p {
+    color: white;
+    text-align: center;
+    font-size: 30px
+}
+
+.logolist {
+    float: right;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.logolist>li {
+    padding: 5px 15px;
+}
+
+.logo {
+    fill: white;
+    width: 50px;
+}
+
+.navigator {
+    background-color: #100F0D;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navigator a {
+    text-decoration: none;
+}
+
+#facebook:hover {
+    fill: rgb(66, 103, 178);
+}
+
+#instagram:hover {
+    fill: rgb(88 81 216);
+}
+
+#twitter:hover {
+    fill: rgb(29, 161, 242);
+}
+
+ul {
+    overflow: hidden;
+}
+
+li a,
+.dpd_btn_tech {
+    display: inline-block;
+}
+
+li.dpd_tech {
+    display: inline-block;
+}
+
+.dpd_content_tech {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dpd_content_tech p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dpd_tech:hover .dpd_content_tech {
+    display: block;
+}
+
+.aboutmenav,
+.myprojectnav,
+.contactnav {
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    color: transparent;
+    border-radius: 50%;
+    transition: width 1s;
+}
+
+.aboutmenav a,
+.myprojectnav a,
+.contactnav a {
+    color: transparent;
+}
+
+.aboutmenav {
+    background-color: #B8B9BB;
+}
+
+.myprojectnav {
+    background-color: #563D7C;
+}
+
+.contactnav {
+    background-color: #FF5C00;
+}
+
+.aboutmenav:hover,
+.myprojectnav:hover,
+.contactnav:hover {
+    color: black;
+    width: 100px;
+    border-radius: 10px;
+    font-size: medium;
+    text-align: center;
+}
+
+.aboutmenav a:hover,
+.myprojectnav a:hover,
+.contactnav a:hover {
+    color: black;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 340px;
+    }
+}
+
+@keyframes picanimate {
+    from {
+        width: 0;
+    }
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(0, 255, 0, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes projectanimate {
+    from {
+        justify-content: flex-start;
+    }
+    to {
+        justify-content: center;
+    }
+}
+
+.code,
+.website {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    height: 40px
+}
+
+.code:hover,
+.website:hover {
+    -webkit-transform: scale(1.8) rotate(0.01deg);
+    transform: scale(1.8) rotate(0.01deg);
+}
