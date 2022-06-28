@@ -461,6 +461,9 @@
 }
 
 @media screen and (max-width:980px) {
+    .homeimage {
+        gap: 50px;
+    }
     .myname {
         font-size: 60px;
     }
