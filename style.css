@@ -71,8 +71,8 @@
 }
 
 .frames:hover {
-    -webkit-transform: scale(1.2) rotate(0.1deg);
-    transform: scale(1.2) rotate(0.1deg);
+    -webkit-transform: scale(1.1) rotate(0.1deg);
+    transform: scale(1.1) rotate(0.1deg);
 }
 
 .frames svg {
@@ -356,8 +356,8 @@
 }
 
 .myprojectimage:hover {
-    -webkit-transform: scale(1.8) rotate(0.01deg);
-    transform: scale(1.8) rotate(0.01deg);
+    -webkit-transform: scale(1.2) rotate(0.01deg);
+    transform: scale(1.2) rotate(0.01deg);
 }
 
 .myprojectimage img {
@@ -389,8 +389,8 @@
 
 .code:hover,
 .website:hover {
-    -webkit-transform: scale(1.8) rotate(0.01deg);
-    transform: scale(1.8) rotate(0.01deg);
+    -webkit-transform: scale(1.1) rotate(0.01deg);
+    transform: scale(1.1) rotate(0.01deg);
 }
 
 .reveal {
