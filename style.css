@@ -18,7 +18,7 @@
 /* Homepage */
 
 .Homepage {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     display: block;
     background: linear-gradient(to bottom left, #0a65b0 0%, #264056 50%, #12212b 100%);
